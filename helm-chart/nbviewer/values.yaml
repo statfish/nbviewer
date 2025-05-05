@@ -60,3 +60,11 @@ statuspage:
   apiKey: ""
   pageId: ""
   metricId: ""
+
+ingress:
+  annotations: {}
+  host: ''
+  secretName: nbviewer-host-secret
+  path: /nbviewer
+  serviceName: nbviewer
+  servicePort: 8888
