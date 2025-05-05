@@ -1,9 +1,9 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: kallisto-api
+  name: {{ template "nbviewer.fullname" . }}-statuspage
   labels:
-    app.kubernetes.io/managed-by: kallisto-api
+    {{- include "nbviewer.labels" . | nindent 4 }}
   annotations:
 {{- with .Values.ingress.annotations }}
 {{- toYaml . | nindent 4 }}
