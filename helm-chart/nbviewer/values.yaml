@@ -47,6 +47,7 @@ nbviewer:
 memcached:
   AntiAffinity: soft
   replicaCount: 2
+  architecture: high-availability
   pdbMinAvailable: 1
 
 updateStrategy:
