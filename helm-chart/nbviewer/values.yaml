@@ -17,6 +17,7 @@ annotations: {}
 
 extraContainers: null
 extraVolumes: null
+extraVolumeMounts: null
 
 livenessProbe:
   enabled: true
